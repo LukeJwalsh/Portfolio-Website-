@@ -1,36 +1,111 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body takes full height */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(19, 18, 18);
+    outline: 5px solid black; 
+    color: white;
+    padding: 0 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Left section of the nav bar */
+nav .left {
+    flex: 1;
+}
+
+/* Right section of the nav bar */
+nav .right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+.nav-link i {
+    margin-right: 8px;
+}
+
+.nav-link:hover {
+    color: rgba(255, 234, 0, 0.904);
+}
+
 /* Grid container */
 main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    height: 100vh;
+    height: 100vh; /* Adjusted to fill screen height */
+    width: 100%;
+    padding-top: 10vh; /* Account for fixed nav height */
 }
 
 /* Grid Items */
+
 aside {
-    background-color: yellow;
+    background-color: rgb(255, 234, 0);
+    outline: 5px solid black; 
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 aside img {
     max-width: 100%;
     height: auto;
+    border-radius: 50%; /* Circular image */
 }
 
 article {
-    padding: 20px;
+    padding: 40px;
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2.5em; /* Increased font size for h1 */
+    margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 2em; /* Increased font size for h2 */
+    margin-bottom: 20px;
 }
 
 ul {
@@ -39,5 +114,91 @@ ul {
 }
 
 li {
+    font-size: 1.2em; /* Increased font size for list items */
+    margin-bottom: 15px;
+}
+
+.topBar {
+    background-color: rgb(19, 18, 18);
+    color: white; /* Text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 1.2em;
+    }
+
+    .nav-link {
+        font-size: 0.9em;
+    }
+
+    main {
+        grid-template-columns: 1fr; /* Single column layout */
+        padding-top: 10vh; /* Account for fixed nav height */
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    aside {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    li {
+        font-size: 1em;
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: rgb(19, 18, 18);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Grid container styling */
+/* Grid container styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 5px;
+}
+
+.project {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and box-shadow */
+}
+
+.project-title {
+    text-decoration: underline;
     margin-bottom: 10px;
+}
+.project-description {
+    list-style-type: disc;
+    margin-left: 20px;
+} 
+
+.project:hover {
+    transform: scale(1.05); /* Slightly increase the size of the project box */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Enhance the shadow on hover */
 }
