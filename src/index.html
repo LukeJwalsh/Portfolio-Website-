@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <script type="module" src="main.js" defer></script>
 
     <!-- Styles Sheet  -->
     <link rel="stylesheet" href="styles.css">
@@ -17,7 +18,7 @@
         <!-- Nav Bar -->
         <nav id="navBar">
             <div class="left">
-                <h1>Welcome!</h1>
+                <h1>Hello and Welcome!</h1>
             </div>
             <div class="right">
                 <ul class="nav-links">
@@ -31,10 +32,11 @@
 
                             <!-- Project Nav -->
                     <li>
-                        <a id="nav-projects" class="nav-link" href="#myProjects">
+                        <a id="nav-projects" class="nav-link" style="display:block" href="#myProjects">
                             <i class="fa-solid fa-floppy-disk"></i> My Projects
                         </a>
                     </li>
+                            <!-- Contact Nav -->
                     <li>
                         <a id="nav-contact" class="nav-link" href="#myContacts">
                             <i class="fa-solid fa-envelope"></i> Contact Me
@@ -57,21 +59,49 @@
         </nav>
     </header>
         <!-- Home content section -->
-    <main id="home">
-        <aside>
-            <img src="docs/files/images/unnamed__3_-removebg-preview.png" alt="Profile Picture">
-        </aside>
-        <article>
-            <h1>Hi, I'm Luke Walsh 👋</h1>
-            <h2>A little about me</h2>
-            <ul>
-                <li>I am currently a senior at The University of Massachusetts Amherst, and am majoring in Computer Science</li>
-                <li>I am proficient in Javascript, Typescript, Python, HTML, CSS, and have a foundational understanding of C</li>
-                <li>I chose to major in Computer Science because of the happiness that videogames brought me as a child and was always fascinated by how someone could make them. I believe coding can be a form of art if you're passionate enough.</li>
-                <li>So coding is not only hopefully my future career but also a real passion of mine</li>
-            </ul>
-        </article>
-    </main>
+         <div id="home-view" class="view">
+        <main id="home">
+            <aside>
+                <img src="docs/files/images/unnamed__3_-removebg-preview.png" alt="Profile Picture">
+            </aside>
+            <article class="homeBackground">
+                <div>
+                    <div class="homeText">
+                        <h1>Hi, I'm Luke Walsh 👋</h1>
+                        <h2>A little about me</h2>
+                        <ul>
+                            <li>Welcome to my portfolio! I built this website with HTML, CSS, and JavaScript to 
+                                showcase my skills and projects. I hope you enjoy your stay!</li>
+
+                            <li><strong>EDUCATION - </strong>I am currently a senior at The University of Massachusetts Amherst, 
+                                majoring in Computer Science. My coursework has covered data structures, 
+                                advanced algorithms, and very in depth classes behind theoretical foundations 
+                                of the math and algorithims that make up computer science. 
+                                Previously, I was also a  Data Science major at Bryant University, where I learned to 
+                                gather and interpert data and also the fundamentals of data analysis. Now, with a solid foundation 
+                                of the theory behind computer science and what makes a good program, my main goal 
+                                 now is to hone my coding skills, which I will achieve through various passion projects that I will display here.</li>
+
+                            <li>Originally, I started as a Data Science major at Bryant University and maintained 
+                                a 3.9 GPA. However, I felt something was missing. I wanted to dive deeper into 
+                                coding and truly create something, and eventually lead to creating a beautiful complex program with a team. 
+                                This deeo feeling led me to transfer to UMass 
+                                Amherst to pursue my dream in Computer Science, whihc has been one of the best decision I've made. </li>
+
+                            <li><strong>SKILLS - </strong>Now that you know who I am, let me share a brief intro to my skills. I am proficient in JavaScript, TypeScript, 
+                                Python, HTML, and CSS, and have 
+                                a foundational understanding of C. I've worked on many challenging projects, 
+                                some of which are showcased on this website and my GitHub. Coding is truly my passion,
+                                 and I'm always eager to take on new projects to refine my skills and expand my portfolio.</li>
+
+                            <li>Now, please feel free to connect with me through the contact information provided 
+                                on this website. Whether you're a fellow student or a potential employer, 
+                                I'd love to hear from you.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </main>
 
     <!-- Project Overview Section -->
     <div class="topBar">
@@ -136,10 +166,36 @@
         </div>
 
     </div>
+</div>
+
+<div id="contact-view" class="view contactBackground" style="display:none;">
+    <div class="homeText">
+        <h1>Contact Me</h1>
+        <p>Hi, have any questions or just simply want to reach out? Fill out the form and I’ll get back to you soon!</p>
+        <p>Or if you prefer you can contact me at my email at Lukejwalsh1701@gmail.com</p>
+        <form id="contact-form" action="/submit-form" method="POST">
+            <label for="firstName">First Name (required)</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+            
+            <label for="email">Email (required)</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message (required)</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
 
     <!-- footer Section-->
     <footer>
         <p>&copy; 2024 Luke Walsh. All rights reserved.</p>
+        <p>pleas say hello <i class="fa-regular fa-face-smile"></i> </p>
     </footer>
 </body>
 </html>
