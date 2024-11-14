@@ -1,5 +1,3 @@
-// main.js
-// main.js
 document.addEventListener("DOMContentLoaded", () => {
     const contactNav = document.getElementById("nav-contact");
     const homeNav = document.getElementById("nav-home");

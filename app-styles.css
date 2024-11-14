@@ -217,7 +217,7 @@ footer {
 
 /* Home Background */
 .homeBackground {
-    background-image: url('docs/files/images/Webiste background.jpg');
+    background-image: url('./docs/files/images/background.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -248,12 +248,20 @@ footer {
 
 /* Basic form styling */
 .contactBackground{
-    background-image: url('docs/files/images/Webiste background.jpg');
+    background-image: url('./docs/files/images/background.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
     position: relative; /* Ensures positioning of child elements */
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
 }
 
 form {
@@ -285,4 +293,12 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+#home-view {
+    display: block;
+}
+
+#contact-view {
+    display: none;
 }
