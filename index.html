@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Luke Walsh</title>
-    <script type="module" src="./app.js" defer></script>
+    <title>Home Page</title>
+    <script type="module" src="app.js" defer></script>
 
-    <!-- Styles Sheet -->
-    <link rel="stylesheet" href="./app-styles.css\">
-
+    <!-- Styles Sheet  -->
+    <link rel="stylesheet" href="app-styles.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header>
+
         <!-- Nav Bar -->
         <nav id="navBar">
             <div class="left">
@@ -21,40 +22,77 @@
             </div>
             <div class="right">
                 <ul class="nav-links">
-                    <li><a id="nav-home" class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a id="nav-projects" class="nav-link" href="#myProjects"><i class="fa-solid fa-floppy-disk"></i> My Projects</a></li>
-                    <li><a id="nav-contact" class="nav-link" href="#myContacts"><i class="fa-solid fa-envelope"></i> Contact Me</a></li>
-                    <li><a id="nav-linkedIn" class="nav-link" href="https://www.linkedin.com/in/luke-walsh-16a728215/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+
+                            <!-- Home Nav -->
+                    <li>
+                        <a id="nav-home" class="nav-link" href="#home">
+                            <i class="fas fa-home"></i> Home
+                        </a>
                     </li>
-                    <li><a id="nav-GitHub" class="nav-link" href="https://github.com/LukeJwalsh" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> GitHub</a>
+
+                            <!-- Project Nav -->
+                    <li>
+                        <a id="nav-projects" class="nav-link" style="display:block" href="#myProjects">
+                            <i class="fa-solid fa-floppy-disk"></i> My Projects
+                        </a>
+                    </li>
+                            <!-- Contact Nav -->
+                    <li>
+                        <a id="nav-contact" class="nav-link" href="#myContacts">
+                            <i class="fa-solid fa-envelope"></i> Contact Me
+                        </a>
+                    </li>
+                            <!-- LinkedIn Nav -->
+                    <li>
+                        <a id="nav-linkedIn" class="nav-link" href="https://www.linkedin.com/in/luke-walsh-16a728215/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                    </li>
+                            <!-- GitHub Nav -->
+                    <li>
+                        <a id="nav-GitHub" class="nav-link" href="https://github.com/LukeJwalsh" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-
-    <!-- Home Content Section -->
-    <div id="home-view" class="view">
+        <!-- Home content section -->
+         <div id="home-view" class="view">
         <main id="home">
             <aside>
                 <img src="docs/files/images/unnamed__3_-removebg-preview.png" alt="Profile Picture">
             </aside>
             <article class="homeBackground">
-                <div class="homeText">
-                    <h1>Hi, I'm Luke Walsh 👋</h1>
-                    <h2>A little about me</h2>
-                    <ul>
-                        <li>Welcome to my portfolio! I built this website with HTML, CSS, and JavaScript to showcase my skills and projects. I hope you enjoy your stay!</li>
-                        <li><strong>EDUCATION -</strong> I am a senior at the University of Massachusetts Amherst, majoring in Computer Science. My coursework includes data structures, advanced algorithms, and theoretical foundations of computer science. Previously, I studied Data Science at Bryant University, focusing on data analysis and interpretation.</li>
-                        <li><strong>SKILLS -</strong> I am proficient in JavaScript, TypeScript, Python, HTML, and CSS, with a foundational understanding of C. I've worked on many challenging projects showcased here and on GitHub. Coding is truly my passion, and I'm eager to refine my skills through new projects.</li>
-                        <li>Feel free to connect with me through the contact information provided on this website. Whether you're a fellow student or a potential employer, I'd love to hear from you!</li>
-                    </ul>
+                <div>
+                    <div class="homeText">
+                        <h1>Hi, I'm Luke Walsh 👋</h1>
+                        <h2>A little about me</h2>
+                        <ul>
+                            <li>Welcome to my portfolio! I built this website with HTML, CSS, and JavaScript to 
+                                showcase my skills and projects. I hope you enjoy your stay!</li>
+
+                            <li><strong>EDUCATION - </strong>I am a senior at the University of Massachusetts Amherst, 
+                                majoring in Computer Science. My coursework includes data structures, advanced algorithms, 
+                                and theoretical foundations of computer science. Previously, I studied Data Science at Bryant 
+                                University, focusing on data analysis and interpretation. With this solid foundation, I am now 
+                                honing my coding skills through various passion projects displayed here.</li>
+
+                            <li><strong>SKILLS - </strong>Now that you know who I am, let me share a brief intro to my skills. I am proficient in JavaScript, TypeScript, 
+                                Python, HTML, and CSS, and have 
+                                a foundational understanding of C. I've worked on many challenging projects, 
+                                some of which are showcased on this website and my GitHub. Coding is truly my passion,
+                                 and I'm always eager to take on new projects to refine my skills and expand my portfolio.</li>
+
+                            <li>Now, please feel free to connect with me through the contact information provided 
+                                on this website. Whether you're a fellow student or a potential employer, 
+                                I'd love to hear from you.</li>
+                        </ul>
+                    </div>
                 </div>
             </article>
         </main>
-    </div>
 
     <!-- Project Overview Section -->
     <div class="topBar">
@@ -63,61 +101,108 @@
     <section id="myProjects" class="grid-container">
         <div class="project">
             <h3 class="project-title">Academix</h3>
-            <p>
-                Academix is a website I built as part of a group project for a class, where the main objective was to develop a functional application. I led the team, conceptualizing the idea, assigning tasks, and assisting teammates. Academix is a study and class management tool designed to enhance study efficiency by tracking classes, homework, and mastery of topics.
-            </p>
-        </div>
+            <ul class="project-description">
+                <li>
 
+            <p>Academix is a website I built as part of a group project for a class, 
+                where the main objective was to develop a functional application. In 
+                this project, I had the opportunity to lead the team, which involved 
+                conceptualizing the project idea, assigning tasks to teammates, and 
+                providing assistance whenever needed. Academix is designed to be a study
+                 and class management tool, similar to Canvas but with a focus on enhancing 
+                 study efficiency. Students can add their current classes, track homework 
+                 and due dates, and monitor their mastery of various topics, identifying 
+                 areas that need more attention. This project was pivotal in developing my 
+                 frontend and backend skills. Through it, I gained proficiency in HTML, CSS, 
+                 JavaScript, and Express.js, providing a comprehensive learning experience 
+                 in web development.
+            </p>
+        </li>
+     </ul>
+        </div>
         <div class="project">
             <h3 class="project-title">Markov Chain Story Generator</h3>
-            <p>
-                One of my earliest and most memorable projects, the Markov Chain Story Generator, introduced me to algorithmic text generation. Users input a text, and the program uses Markov chains to generate coherent stories. This project enhanced my understanding of Java and the practical applications of algorithms.
-            </p>
+            <ul class="project-description">
+                <li>
+                    One of my earliest and most memorable projects, undertaken while I was first learning Java, was a Markov Chain Story Generator. This project introduced me to the concept of Markov chains and their powerful applications. I developed a program that allows users to input any text, such as books, which the program then cleans and converts into Markov chains. The user specifies a number to determine the length of word sequences the program analyzes. Based on this, the program identifies the most common subsequent words, randomly selects one, and continues this process until a coherent story is generated. The logic behind this ensures that the stories maintain coherence, as the program does not arbitrarily choose words but follows a sound algorithmic approach. A notable feature of my program is its ability to process large texts, such as the entire Bible, and generate a story from it relatively quickly. This project not only enhanced my understanding of Java but also demonstrated the practical applications of Markov chains in text generation.
+                </li>
+            </ul>
         </div>
+        <!-- Add more projects as needed -->
 
+    </section>
+
+    <div class="grid-container">
         <div class="project">
-            <h3 class="project-title">Closet Lab</h3>
+            <h3 class="project-title">Weather App</h3>
+            <ul class="project-description">
+                <li>
+
             <p>
-                Closet Lab is a mobile app developed in a group project to help users organize and visualize their outfits. The app supports uploading photos of clothing, creating outfits, and planning with a calendar, alongside donation reminders for unused items. We followed real software development practices, including creating software requirement documents, system design documents, unit testing, and system testing. I contributed to both the React Native frontend and the Python/MongoDB backend.
+                In Development . . .
             </p>
+        </li>
+     </ul>
+                    Closet Lab is a mobile app I developed as part of a group project, designed to help 
+                    users organize and visualize their outfits. The app allows users to upload photos of 
+                    their clothing, create outfits, and plan ahead using a calendar. It also features 
+                    donation reminders for unused items, combining practicality with environmental 
+                    consciousness. This project followed real software development practices, 
+                    including the creation of detailed software requirement documents and system 
+                    design documents, as well as conducting unit testing and system testing to ensure 
+                    a high-quality product. Working with my team, I contributed to both the frontend 
+                    and backend, utilizing React Native for the interface and Python with MongoDB for 
+                    data storage. Closet Lab was an incredible experience that enhanced my skills in 
+                    collaborative development, mobile app design, and creating user-focused features.
+                </li>
+            </ul>
         </div>
 
         <div class="project">
             <h3 class="project-title">More to Come</h3>
+            <h3 class="project-title">Drive</h3>
+            <ul class="project-description">
+                <li>
+
             <p>
-                Stay tuned for future projects, including a Weather App and other exciting tools!
+                - Drive 
+                - Weather App
+                - 
             </p>
+        </li>
+     </ul>
         </div>
-    </section>
 
-    <!-- Contact Section -->
-    <div id="contact-view" class="view contactBackground" style="display:none;">
-        <div class="homeText">
-            <h1>Contact Me <i class="fa-solid fa-comments"></i></h1>
-            <p>Hi, have any questions or want to reach out? Fill out the form, and I’ll get back to you soon!</p>
-            <p>Or contact me at <strong>Lukejwalsh1701@gmail.com</strong></p>
-            <form id="contact-form" action="/submit-form" method="POST">
-                <label for="firstName">First Name (required)</label>
-                <input type="text" id="firstName" name="firstName" required>
-
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName">
-
-                <label for="email">Email (required)</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message (required)</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
     </div>
+</div>
 
-    <!-- Footer Section -->
+<div id="contact-view" class="view contactBackground" style="display:none;">
+    <div class="homeText">
+        <h1>Contact Me <i class="fa-solid fa-comments"></i> </h1>
+        <p>Hi, have any questions or just simply want to reach out? Fill out the form and I’ll get back to you soon!</p>
+        <p>Or if you prefer you can contact me at my email at Lukejwalsh1701@gmail.com</p>
+        <form id="contact-form" action="/submit-form" method="POST">
+            <label for="firstName">First Name (required)</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+
+            <label for="email">Email (required)</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message (required)</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+    <!-- footer Section-->
     <footer>
         <p>&copy; 2024 Luke Walsh. All rights reserved.</p>
-        <p>Please say hello <i class="fa-regular fa-face-smile"></i></p>
+        <p>pleas say hello <i class="fa-regular fa-face-smile"></i> </p>
     </footer>
 </body>
-</html>
